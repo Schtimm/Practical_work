@@ -31,7 +31,6 @@
         <p><textarea  rows="2" cols="50" name="QUEST" placeholder="Your question"></textarea></p>
         <p><input type="text" size="50" name="Username" placeholder="Your login"></p>
         <p><input type="text" size="50" name="ADRESS" placeholder="Your email"></p>
-        <p class="btn btn-default". ><input type="submit" value="Send"></p>
+        <p><input type="submit" value="Send" class="btn btn-default". ></p>
     </form>
-
 </div>

@@ -14,8 +14,8 @@ def my_form():
     data={}
     if(mail!="" and login!="" and question!=""):
         if(re.match(pattern, mail) is not None):
-            data[mail]=question
-            #data[login]=question
+            #data[mail]=question
+            data[mail]=[login, question]
             with open('data.txt', 'a') as outfile:
                 json.dump(data, outfile)
             return "Thanks, " +str(login)+"! The answer will be sent to the mail %s" % mail+"\

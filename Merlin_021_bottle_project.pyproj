@@ -22,6 +22,8 @@
     <WebBrowserPort>
     </WebBrowserPort>
     <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>test_*.py</UnitTestPattern>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,6 +48,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_phone_correct.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_phone_incorrect.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test_T.py">

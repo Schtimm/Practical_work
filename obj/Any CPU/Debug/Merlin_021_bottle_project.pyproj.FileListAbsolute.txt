@@ -1,0 +1,2 @@
+F:\_МДК 02.02 Инструментальные средства разработки ПО\Лаб 5-6\Merlin_021_bottle_project\obj\Any CPU\Debug\Merlin_021_bottle_project.pyproj.SuggestedBindingRedirects.cache
+F:\_МДК 02.02 Инструментальные средства разработки ПО\Лаб 5-6\Merlin_021_bottle_project\obj\Any CPU\Debug\Merlin_021_bottle_project.pyproj.CoreCompileInputs.cache

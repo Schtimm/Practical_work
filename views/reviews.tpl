@@ -7,6 +7,7 @@
     <p><textarea  rows="2" cols="50" name="Review" placeholder="Review"></textarea></p>
     <p><input type="text" size="50" name="Username" placeholder="Your login"></p>
     <p><input type="text" size="50" name="Phone" placeholder="Your phone number"></p>
+    <p>Phone must be written in +Y-(YYY)-YYY-YY-YY format</p>
     <p><input type="submit" value="Send" class="btn btn-default". ></p>
 </form>
 <p>Help us by providing feedback</p>

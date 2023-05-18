@@ -37,6 +37,9 @@
     <Compile Include="app.py">
       <Publish>False</Publish>
     </Compile>
+    <Compile Include="checkfunctions.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="myform.py">
       <SubType>Code</SubType>
     </Compile>

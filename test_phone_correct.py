@@ -1,6 +1,6 @@
 import unittest
 import re
-from reviewform import checkphone
+from checkfunctions import*
 correctphones=["+7-(981)-122-33-25", "+8-(900)-245-11-83", 
                "+43-(917)-150-25-74", "+375-(925)-118-45-14",
                "+43-(911)-678-29-11", "+7-(912)-311-28-09", "+55-(909)-115-38-75", 

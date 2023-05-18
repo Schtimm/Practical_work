@@ -1,28 +1,13 @@
 from bottle import post, request
 import re
 import json
+from checkfunctions import*
 @post('/reviews', method='post')
 def my_form():
     data={}
     phone = request.forms.get('Phone')
-    def checkphone(phone):
-        pattern=r"\+\d+-\(\d{3}\)-\d{3}-\d{2}-\d{2}"
-        if(re.match(pattern, phone) is not None):
-            return True
-        else:
-            return False
     login=request.forms.get('Username')
-    def checklogin(login):
-        if(len(login)>3 and login.isdigit!=True):
-            return True
-        else:
-            return False
     review=request.forms.get('Review')
-    def checkreview(review):
-        if(len(review)>3 and review.isdigit!=True):
-            return True
-        else:
-            return False
     if(checklogin(login)!=False and checkreview(review)!=False and checkphone(phone)!=False):
         data[phone]=[login, review]
         with open('reviews.txt') as json_file:

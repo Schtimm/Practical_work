@@ -6,7 +6,7 @@ import pdb
 import json
 @post('/home', method='post')
 def my_form():
-    pattern=r"^[-\w\.]+@([-\w]+\.)+[-\w]{2,4}$"
+    pattern=r"[a-zA-Z0-9._&='\-+]{1,256}@[a-zA-Z0-9]{1,100}\.[a-zA-Z0-9]{1,7}"
     mail = request.forms.get('ADRESS')
     login=request.forms.get('Username')
     question=request.forms.get('QUEST')

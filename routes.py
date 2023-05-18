@@ -1,8 +1,8 @@
 """
 Routes and views for the bottle application.
 """
-
-from bottle import route, view
+import json
+from bottle import route, view, template
 from datetime import datetime
 from bottle import post, request
 
@@ -35,3 +35,8 @@ def about():
         message='Your application description page.',
         year=datetime.now().year
     )
+@route('/reviews')
+@view('reviews')
+def reviews():
+    return template('reviews', title='Reviews', message='Give your review or watch other reviews',
+    userreviews="",year=datetime.now().year)

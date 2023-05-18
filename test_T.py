@@ -7,7 +7,7 @@ def checkmail(mail):
     else:
         return False
 correctemails=["johnsmith@gmail.com", "Johnsmith@gmail.com", "NEWMAIL@gmail.com", "something@rambler.ru",
-               "m.m@mail.ru", "m1@gmail.com", "login@domen.ru", "alicetest@example.com", "user123@gmail.com",
+               "m.m@mail.ru", "m1@gmail.com", "login@domen.ru", "alice+test@example.com", "user123@gmail.com",
                "support@example.org", "john.doe@gmail.com"]
 class Test_test_T_mail(unittest.TestCase):
     def test_A(self):

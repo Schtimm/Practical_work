@@ -21,6 +21,7 @@
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>
     </WebBrowserPort>
+    <TestFramework>unittest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,8 +32,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.py" />
+    <Compile Include="app.py">
+      <Publish>False</Publish>
+    </Compile>
     <Compile Include="myform.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="reviewform.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
@@ -78,6 +84,7 @@
     <Content Include="views\contact.tpl" />
     <Content Include="views\index.tpl" />
     <Content Include="views\layout.tpl" />
+    <Content Include="views\reviews.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
